@@ -2,14 +2,9 @@ name: Reusable Workflow
 
 on:
   workflow_call:
-    inputs:
-      input1:
-        required: true
-        type: string
-
 jobs:
   example_job:
     runs-on: ubuntu-latest
     steps:
       - name: Print Input
-        run: echo "Input received: ${{ inputs.input1 }}"
+        run: echo "Input received:"
